@@ -1,0 +1,324 @@
+<!doctype html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>백엔드 개발자 이승현 :: Portfolio</title>
+    <link rel="stylesheet" th:href="@{/project/resources/stylesheets/landingPage.css}">
+    <script defer th:src="@{/project/resources/scripts/landingPage.js}"></script>
+    <script src="https://kit.fontawesome.com/71448d348e.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Heebo|Noto+Sans+KR" rel="stylesheet">
+</head>
+<body>
+<!DOCTYPE html>
+<html lang="ko">
+<body>
+
+<header class="header-area navbar-fade" id="header">
+    <nav class="navbar">
+        <a class="navbar-brand" id="navbarBrand">Portfolio</a>
+        <a class="navbar-toggle" id="toggleBtn"><i class="fas fa-bars"></i></a>
+        <div class="navbar-menu" id="menu">
+            <div class="nav-item"><a class="nav-link" id="navbarAbout">about</a></div>
+            <div class="nav-item"><a class="nav-link" id="navbarInformation">information</a></div>
+            <div class="nav-item"><a class="nav-link" id="navbarSkill">skill</a></div>
+            <div class="nav-item"><a class="nav-link" id="navbarPortfolio">portfolio</a></div>
+        </div>
+    </nav>
+</header>
+<section class="about-area" id="about">
+    <div class="title">
+        ABOUT
+    </div>
+    <div class="picture">
+        <img th:src="@{/resources/images/my.png}">
+        <div class="name">이승현</div>
+        <div class="description">백엔드 개발자</div>
+    </div>
+    <div class="name">
+        <div class="intro">
+            안녕하십니까? 백엔드 개발자 이승현</a> 입니다.<br>
+            항공소프트웨어학과</a>에 진학하면서 콘솔에 "Hello World"를 찍어보면서 코딩을 시작하였습니다.<br>
+            다양한 분야 속에서 어떤 것을 좋아하고 흥미를 느끼는지 알기 위해서 직접 경험해 보는 것이 중요하다 생각하여 대학생활을 하면서
+            프론트, 백엔드, VR, 인공지능 등 다양한 분야에 관심을 가지고 배웠습니다.<br>
+            여러 분야를 경험하고 보니 보이지 않는 곳에서 직접적인 편의를 제공하는 서비스를 개발하는 백엔드의 매력을 느끼게 되었습니다.
+            백엔드에 대한 깊이 있는 개발공부가 필요하여 웹 개발 과정 국비학원을 다니면서 매일 개발 공부에 모든 시간을 투자하고 있습니다.<br>
+            "좋은 코드는 사람이 이해하기 좋은 코드다"</a>라는 말을 항상 생각하며 나를 위한 코드가 아닌 다른 사람이 보았을 때 이해하기 편한 코드를
+            개발하는 개발자가 되는 것이 목표입니다.
+        </div>
+        <ul>
+            <li>
+                <div class="info">
+                    <i class="far fa-calendar-alt"></i> 1996.12.12
+                </div>
+            </li>
+            <li>
+                <div class="info">
+                    <i class="fa fa-phone"></i> +82 10-6405-6966
+                </div>
+            </li>
+            <li>
+                <div class="info">
+                    <i class="fa fa-envelope"></i> ljh5968@naver.com
+                </div>
+            </li>
+            <li>
+                <div class="info">
+                    <i class="fa fa-home"></i> 대구광역시 북구 팔거천동로 24길 40
+                </div>
+            </li>
+        </ul>
+        <div class="sns">
+            <a style="text-decoration:none;" th:href="@{https://winhyun.tistory.com}"
+               target="blank">
+                <i class="fa-solid fa-blog"></i>
+            </a>
+            <a style="text-decoration:none;" th:href="@{https://github.com/win-hyun}" target="blank">
+                <i class="fa-brands fa-github"></i>
+            </a>
+            <a style="text-decoration:none;" th:href="@{https://www.instagram.com/e_shynni/}" target="blank">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+        </div>
+    </div>
+</section>
+
+<section class="information-area" id="information">
+    <div class="title">
+        INFORMATION
+    </div>
+    <div class="container">
+
+        <div class="item">
+            <div class="service">GRADUATION</div>
+            <div class="content">-2018~20 육군부사관 근무<br>-2015~22 경운대학교(항공소프트웨어 전공)</div>
+        </div>
+
+        <div class="item">
+            <div class="service">EDUCATION</div>
+            <div class="content">-2021.08~09 (주)위즈앤테크 현장실습<br>-2022.01~02 (주)케이엔엘정보시스템 현장실습
+                <br>-2022.08~2023.02 코리아 IT 아카데미 임베디드 풀스택 개발자 양성 과정 수료<br>-대구 AI hub AI+WEB 과정 3기 수료
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section class="skill-area" id="skill">
+    <div class="title">
+        SKILL
+    </div>
+    <div class="container">
+
+        <a class="skill-prev" id="skillPrev">❮</a>
+        <a class="skill-next" id="skillNext">❯</a>
+
+        <div class="skill-slide res-show">
+            <div class="image">
+                <img th:src="@{/resources/images/java.png}">
+            </div>
+            <div class="name">
+                JAVA
+            </div>
+            <div class="text">
+                <p>자바의 기초문법을 이해하고 알고리즘을 통해 꾸준히 학습하는 중. 객체지향 프로그래밍에 대한 전반적인 이해를 하고 있다. 자바 언어를 활용하여 웹 페이지 개발의 기초를 다지고 접근할
+                    수 있음.</p>
+            </div>
+        </div>
+
+        <div class="skill-slide show">
+            <div class="image">
+                <img th:src="@{/resources/images/js.png}">
+            </div>
+            <div class="name">
+                JS
+            </div>
+            <div class="text">
+                <p>JS를 통해 이벤트를 만들고, Ajax를 활용하여 웹과 서버에 통신할 수 있다.
+                </p>
+            </div>
+        </div>
+
+        <div class="skill-slide show">
+            <div class="image">
+                <img th:src="@{/resources/images/mariadb.png}">
+            </div>
+            <div class="name">
+                MariaDB
+            </div>
+            <div class="text">
+                <p>기본 쿼리문을 활용하여 데이터베이스를 다룰 수 있으며 DDL, DML, DCL을 활용하여 기본적인 테이블을 만들고 사용할 수 있다. myBatis를 사용하여 DB관련 메서드를
+                    인터페이스에 정의 할 수 있고 JDBC를 사용 할 수 있다.
+                </p>
+            </div>
+        </div>
+
+        <div class="skill-slide hide">
+            <div class="image">
+                <img th:src="@{/resources/images/html.png}">
+            </div>
+            <div class="name">
+                HTML
+            </div>
+            <div class="text">
+                <p>페이지 설계 및 태그를 사용하여 웹 페이지의 틀을 만들 수 있고 Thymeleaf 문법을 사용하여 백엔드 서버에서 html을 동적으로 렌더링 할 수 있다.
+                </p>
+            </div>
+        </div>
+
+        <div class="skill-slide hide">
+            <div class="image">
+                <img th:src="@{/resources/images/css.png}">
+            </div>
+            <div class="name">
+                CSS
+            </div>
+            <div class="text">
+                <p> 다양한 속성을 활용하여 페이지를 디자인 할 수 있으며 반응형 레이아웃 구축이 가능하다.
+                </p>
+            </div>
+        </div>
+
+        <div class="skill-slide hide">
+            <div class="image">
+                <img th:src="@{/resources/images/spring-boot.png}">
+            </div>
+            <div class="name">
+                Spring Boot
+            </div>
+            <div class="text">
+                <p> MVC패턴을 이해하고 있고 클라이언트와 서버를 구분하여 요청을 하고 응답을 받도록 데이터를 다룰 수 있다.<br> 다양한 웹 서버 실습을 통해 기초적인 백엔드
+                    를 구현할 수 있음.</p>
+            </div>
+        </div>
+        <div class="skill-slide hide">
+            <div class="image">
+                <img th:src="@{/resources/images/mysql.png}">
+            </div>
+            <div class="name">
+                MySql
+            </div>
+            <div class="text">
+                <p> 데이터 CRUD가 가능하며 웹의 요소들을 구현할 수 있습니다.
+                    외래키,기본키,JOIN 사용이 가능합니다.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="portfolio-area" id="portfolio">
+    <div class="title">
+        PORTFOLIO
+    </div>
+    <div class="filter">
+        <ul class="list">
+            <li class="listItem active" id="all">
+                all
+            </li>
+            <li class="listItem" id="team">
+                Team
+            </li>
+            <li class="listItem" id="personal">
+                Personal
+            </li>
+<!--            <li class="listItem" id="practice">-->
+<!--                Practice-->
+<!--            </li>-->
+        </ul>
+    </div>
+    <div class="container">
+        <div class="filterItem team">
+            <div class="image">
+                <div class="overlay" ><i class="far fa-image"></i></div>
+                <img th:src="@{/resources/images/megabox2.png}">
+            </div>
+            <div class="main">
+                메가박스 클론코딩
+            </div>
+            <div class="sub">
+                메가박스 클론코딩 하는 것을 목표로 Spring Boot와 Java 등을 활용하여<br>
+                회원가입, 로그인, 게시판, 예매 등 다양한 기능을 구현하였음.
+            </div>
+            <div class="text">
+                <a th:href="@{https://megabox.winhyun.dev/}" target="blank" class="text-link">사이트 바로가기</a>
+            </div>
+        </div>
+        <div class="filterItem personal">
+            <div class="image">
+                <div class="overlay"><i class="far fa-image"></i></div>
+                <img th:src="@{/resources/images/register.png}">
+            </div>
+            <div class="main">
+               My MegaBox
+            </div>
+            <div class="sub">
+                회원가입, 로그인, 아이디찾기, 비밀번호 재설정,<br>
+                게시판, 극장 부분 기능 구현
+            </div>
+            <div class="text">
+                <a th:href="@{https://winhyun.tistory.com/73}" target="blank" class="text-link">사이트 바로가기</a>
+            </div>
+        </div>
+        <div class="filterItem personal">
+            <div class="image">
+                <div class="overlay"><i class="far fa-image"></i></div>
+                <img th:src="@{/resources/images/matzip.png}">
+            </div>
+            <div class="main">
+                스프링부트를 활용하여 맛집 사이트 만들기
+            </div>
+            <div class="sub">
+                현재 위치 근처 또는 원하는 위치의 음식점 확인 가능.<br>
+                리스트 또는 지도의 아이콘 클릭 시 해당 음식점의 상세 정보 확인이 가능.
+            </div>
+            <div class="text">
+                <a href="#">사이트 바로가기</a>
+            </div>
+        </div>
+<!--        <div class="filterItem personal">-->
+<!--            <div class="image">-->
+<!--                <div class="overlay"><i class="far fa-image"></i></div>-->
+<!--                <img src="#">-->
+<!--            </div>-->
+<!--            <div class="main">-->
+<!--                몰라-->
+<!--            </div>-->
+<!--            <div class="sub">-->
+<!--                개인 프로젝트-->
+<!--            </div>-->
+<!--            <div class="text">-->
+<!--                <a href="#" target="blank">이동</a>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="filterItem practice">-->
+<!--            <div class="image">-->
+<!--                <div class="overlay"><i class="far fa-image"></i></div>-->
+<!--                <img src="/resources/images/aiHub.png">-->
+<!--            </div>-->
+<!--            <div class="main">-->
+<!--                대구 AI hub AI+WEB 과정 3기 수료-->
+<!--            </div>-->
+<!--            <div class="sub">-->
+<!--                html, css, javascript의 기본적인 내용 학습-->
+<!--            </div>-->
+<!--            <div class="text">-->
+<!--                <a href="https://www.notion.so/wlsgurdbqls/AI-hub-AI-WEB-3-88ef5e8d7d0a4b33ba0c9e27a796888c"-->
+<!--                   target="blank">이동</a>-->
+<!--            </div>-->
+<!--        </div>-->
+    </div>
+</section>
+<div id="portfolioModel" class="model">
+    <span class="close" id="modelClose">&times;</span>
+    <div class="container">
+        <img id="modelImage">
+        <div id="modelMain" class="model-main"></div>
+        <div id="modelSub" class="model-sub"></div>
+        <div id="modelText" class="model-text"></div>
+    </div>
+</div>
+</body>
+</html>
