@@ -44,8 +44,6 @@ function moveTo(id) {
 function moveTo(id) {
     if (id === 'brand') {
         window.scrollTo(0, 0);
-
-
     } else {
         window.scrollTo(0, document.getElementById(id).offsetTop - 70);
     }
@@ -117,11 +115,13 @@ function viewPortfolio(event) {
     let mainNode = itemNode.nextElementSibling;
     let subNode = mainNode.nextElementSibling;
     let textNode = subNode.nextElementSibling;
+    // let gitNode = textNode.nextElementSibling;
 
     document.getElementById('modelImage').src = imageNode.src;
     document.getElementById('modelMain').innerHTML = mainNode.innerHTML;
     document.getElementById('modelSub').innerHTML = subNode.innerHTML;
     document.getElementById('modelText').innerHTML = textNode.innerHTML;
+    // document.getElementById('modelGit').innerHTML = gitNode.innerHTML;
     document.getElementById('portfolioModel').style.display = 'block';
 }
 

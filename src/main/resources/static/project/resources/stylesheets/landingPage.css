@@ -27,20 +27,6 @@ a {
     text-transform: uppercase;
 }
 
-.text-link {
-    text-decoration: none;
-    font-size: 18px;
-    text-transform: uppercase;
-    color: #0350a6;
-}
-
-.text-link:hover {
-    text-decoration: underline;
-    cursor: pointer;
-    color: #eeeeee;
-}
-
-
 ul {
     list-style-type: none;
 }
@@ -485,6 +471,7 @@ section {
     /*display: none;*/
 }
 
+
 .portfolio-area > .container > .filterItem > .text {
     display: none;
 }
@@ -526,7 +513,6 @@ section {
 }
 
 
-
 #portfolioModel > .container > img {
     width: calc(100% - 40px);
 
@@ -555,6 +541,10 @@ section {
 #portfolioModel > .container > .model-text {
     font-size: 16px;
     color: #bbb;
+}
+
+#portfolioModel > .container > .model-text > a {
+    margin: 10px;
 }
 
 
@@ -621,6 +611,7 @@ section {
 .skill-area > .container > .skill-slide.show {
     display: none;
 }
+
 @media (min-width: 992px) {
     .skill-area > .container > .skill-slide.show {
         display: inline-block;
@@ -667,3 +658,22 @@ section {
     padding: 0 10px;
 }
 
+.github,
+.web {
+    font-size: 30px;
+    color: white;
+    display: block;
+    transition: all 0.3s ease-out;
+}
+
+.web:hover {
+    transform: translateY(-5px);
+    color: cornflowerblue;
+    cursor: pointer;
+}
+
+.github:hover {
+    transform: translateY(-5px);
+    color: cornflowerblue;
+    cursor: pointer;
+}
